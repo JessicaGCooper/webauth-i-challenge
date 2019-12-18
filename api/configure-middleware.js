@@ -20,7 +20,7 @@ const sessionConfiguration = {
     clearInterval: 1000 * 60 * 60, // converts to 60 minutes // default to 6000
     sidfieldName: 'sid',
     //optional
-    tablename: 'sessionsTable'
+    tablename: 'sessions'
   }),
 
   // cookie options

@@ -8,13 +8,15 @@ module.exports = {
 }
 
 function find(){
-    return db('users').select('id', 'username');
+    return db('users')
+    .select('id', 'username')
+    .orderBy('id');
 }
 
 function findBy(filter) {
     return db('users') 
     .select('id', 'username', 'password')
-    .where(filter);
+    .where(filter)
 }
 
 function findById(id) {

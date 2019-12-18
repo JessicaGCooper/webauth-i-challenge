@@ -56,7 +56,7 @@ router.get('/logout', (req, res) => {
                 .json({ message: "You can checkout anytime, but you can never leave!"})
             } else {
                 res
-                .status
+                .status(500)
                 .json({ message: "You have successfully logged out." })
             }
         })
